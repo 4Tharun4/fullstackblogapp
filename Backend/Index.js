@@ -27,6 +27,14 @@ server.use(bodyParser.json())
 server.use("/api/auth",RouterAuth);
 server.use("/api/posts",route);
 
+//deploy message
+ 
+
+server.get("/",(req,res)=>{
+  res.send("Deploy Backend")
+})
+
+
 
 // const upload = multer({ dest: './uploads/' })
 
