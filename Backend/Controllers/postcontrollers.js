@@ -35,7 +35,7 @@ export const addpost = (req,res)=>{
     req.body.set,
    
   ];
-  console.log(req.body.set);
+  // console.log(req.body.set);
 
   db.query(q,[values],(err,data)=>{
     if(err)  return res.status(500).json(err);

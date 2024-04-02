@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
      <img src={image} alt="" />
-     <span>Made with  <span className='symbol'>&#10084;</span>and  ReactJs</span>
+     {/* <span>Made with  <span className='symbol'>&#10084;</span>and  ReactJs</span> */}
     </footer>
   )
 }
