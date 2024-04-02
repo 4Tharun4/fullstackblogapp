@@ -13,7 +13,11 @@ import bodyParser from "body-parser";
 
 
 const server = express();
-server.use(cors());
+server.use(cors({
+  origin:["http://localhost:5173"],
+  methods:["GET","POST"],
+  credentials:true
+}))
 server.use(cookieParser());
 server.use(express.json());
 server.use(bodyParser.urlencoded({extended:true}));
