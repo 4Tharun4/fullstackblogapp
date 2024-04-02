@@ -31,7 +31,7 @@ server.use("/api/posts",route);
  
 
 server.get("/",(req,res)=>{
-  res.send("Deploy Backend")
+  res.json("Deploy Backend")
 })
 
 
